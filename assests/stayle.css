@@ -1,0 +1,124 @@
+:root {
+    --color-placeolder: #757575;
+    --dark-color: #1E202B;
+    --btn-color: #009AD8;
+    --head-div: #2D303D;
+    --body-div: #323544;
+    --footer-div: #323544;
+    --footer: #262936
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/*NavBar*/
+nav img {
+    width: 50px;
+}
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.nav-item a {
+    color: #fff !important;
+    padding-left: 40px !important;
+
+}
+
+/*data-section*/
+
+.form-container {
+    background-image: url(../images/banner.png);
+    background-position: cover;
+    background-size: cover;
+    height: 50vh;
+
+
+}
+
+
+#findInput {
+    background-color: var(--dark-color);
+
+}
+
+#findInput::placeholder {
+    color: var(--color-placeolder);
+
+}
+
+.btn-find {
+    background-color: var(--btn-color);
+    width: 15%;
+    top: 0;
+    right: 0;
+
+}
+
+.forecast-table {
+    background-color: var(--dark-color);
+}
+
+#today-weather {
+    background-color: var(--head-div);
+}
+
+#tomorrow {
+    background-color: var(--footer);
+}
+
+#afterTomorrow {
+    background-color: var(--body-div);
+}
+
+#today {
+    background-color: var(--footer-div);
+}
+
+.head {
+    border-bottom: var(--color-placeolder) solid 3px;
+}
+
+.temp {
+    font-size: 4rem;
+}
+
+.temp2 {
+    font-size: 2rem;
+}
+
+
+
+
+
+ul li {
+    list-style: none;
+}
+
+/*footer*/
+
+.footer-weather {
+    background-color: var(--footer);
+}
+
+.footer-info {
+    font-size: 1rem;
+}
+
+#btnSubscribe {
+    width: fit-content;
+}
+
+
+.subscribe-form input {
+    background-color: var(--dark-color) !important;
+
+}
+
+.subscribe-form input::placeholder {
+    color: var(--color-placeolder);
+
+}

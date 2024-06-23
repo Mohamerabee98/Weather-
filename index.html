@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/all.min.css">
+    <link rel="stylesheet" href="./assests/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/stayle.css">
+    <link rel="stylesheet" href="./assests/media.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <!--Navbar-->
+
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <img src="images/logo@2x.png" class="ms-5" alt="">
+            <a class="navbar-brand text-white ps-3 " href="#">Weather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars text-white"></i></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto text-center p-3 ">
+                    <li class="nav-item ">
+                        <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--search-->
+
+    <section>
+        <div class="find-location">
+            <div class="container-fluid form-container  pt-5">
+                <div class="container">
+                    <form class="find-form position-relative ">
+                        <input id="findInput" class="form-control w-100 rounded-5 p-3 position-relative text-white "
+                            type="text" placeholder="Find your location...">
+
+                        <button id="btnFind" class=" btn-find position-absolute rounded-5 h-100  text-white "
+                            type="button">Find</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--body data-->
+
+
+
+    <div class="forecast-table pb-5 ">
+        <div class="container ">
+            <div id="forecast" class="row  rounded-3 forecast-container ">
+                <!--^ today -->
+                <div id="today" class="col-md-4 text-white data-weather text-white    m-0 ">
+                    <div class="head  p-2 d-flex justify-content-between">
+                        <p>Sunday</p>
+                        <p>21June</p>
+                    </div>
+
+                    <div class="body-weather text-center pt-5 pb-5 pe-3 ps-2 ">
+                        <p class="text-start fs-2">Cairo</p>
+                        <h1 class="temp text-start">32.2<sup>O</sup>C</h1>
+                        <img src="./images/113.png" class="w-25 mt-3 " alt="">
+                        <p class="text-start text-info">Sunny</p>
+                    </div>
+
+                    <div class="footer pb-4 pe-4 ">
+                        <ul class="d-flex justify-content-around  ">
+                            <li><span><i class="fa-solid fa-wind  pe-1  "></i></span> 18km/h</li>
+                            <li><span><i class="fa-solid fa-umbrella  pe-1"></i></span>20%</li>
+                            <li> <span><i class="fa-solid fa-compass  pe-1"></i></span>East</li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <!--^ tomorrow -->
+
+                <div class="col-md-4 text-white data-weather m-0 " id="tomorrow">
+                    <div class="head p-2 d-flex justify-content-between">
+                        <p class="text-center">Monday</p>
+
+                    </div>
+
+                    <div class="body-weather text-center pt-5 pb-5 pe-3 ps-2 ">
+
+                        <img src="./images/113.png" class="  " alt="">
+                        <h1 class="temp2 pt-4">41.3<sup>O</sup>C</h1>
+                        <p class="fs-5 mb-0">29.3<sup>o</sup></p>
+                        <p class="text-center text-info pt-4 mt-4">Sunny</p>
+                    </div>
+
+                </div>
+
+                <!--^ afterTomorrow -->
+                <div id="afterTomorrow" class="col-md-4 text-white data-weather m-0 ">
+                    <div class="head p-2 text-center">
+                        <p>Sunday</p>
+
+                    </div>
+
+                    <div class="body-weather text-center pt-5 pb-5 pe-3 ps-2 ">
+                        <img src="./images/113.png" class="  " alt="">
+                        <h1 class="mt-4 temp2 mb-4">40.8<Sup>O</Sup>C</h1>
+                        <p class="fs-5  ">29.3<sup>o</sup></p>
+                        <p class="mt-4  text-info">Sunny</p>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--footer-->
+    <footer class="footer-weather p-5 ">
+        <div class="container ">
+            <div class="row flex-column flex-md-row align-items-center mb-3">
+                <div class="col-lg-8 ">
+                    <form class="subscribe-form position-relative">
+
+
+                        <input id="subscribeInput" class="form-control  border-0 p-3 w-100 rounded-5 " type="text"
+                            placeholder="Enter your email to subscribe...">
+                        <button id="btnSubscribe" class=" btn-find position-absolute rounded-5 h-100 text-white"
+                            type="button">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-lg-3  d-flex justify-content-center  mt-4 mt-lg-0 pt-2 pt-lg-0">
+                    <div class="social-links ">
+                        <a href="#" class="p-3 text-info bg-black rounded-5"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="p-3 text-info bg-black rounded-5  "><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="p-3 text-info bg-black rounded-5 "><i
+                                class="fa-brands fa-google-plus"></i></a>
+                        <a href="#" class="p-3 text-info bg-black rounded-5 "><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <p class=" footer-info text-start text-white">Copyright 2014 Company name. Designed by Themezy. All rights
+                reserved</p>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
