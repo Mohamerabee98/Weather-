@@ -30,9 +30,6 @@ function handleMonth(dateString) {
 
 
 
-
-
-
 async function getWeather(searchLocation) {
     try {
         let response = await fetch(`${baseURL}?key=${APIKey}&q=${searchLocation}&days=3`);
